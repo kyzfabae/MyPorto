@@ -51,8 +51,9 @@ html::-webkit-scrollbar-track{
     top: 0;
     left: 0;
     width: 100%;
+    height: 80px;
     padding: 3rem 9%;
-    background: rgba(0, 0, 0, 7);
+    background: rgba(0, 0, 0, 1);
     filter: drop-shadow(10px);
     /* filter drop shadow means applies a drop shadow effect to the input image */
     display: flex;
@@ -66,7 +67,7 @@ html::-webkit-scrollbar-track{
     color: var(--third-bg-color);
     font-weight: 800;
     cursor: pointer;
-    transition: 1.5 ease ;
+    transition: 0.5 ease ;
 }
 .logo:hover{
     transform: scale(1.1);
@@ -80,8 +81,7 @@ html::-webkit-scrollbar-track{
     transition: 0.7 ease;
 }
 .navbar a:hover,
-.navbar a:active
-/* active selector is used to select and style the active link and become active when u click on it */
+.navbar a.active
 {
     color: var(--third-bg-color);
     border-bottom: 3px solid var(--third-bg-color);
@@ -108,6 +108,7 @@ html::-webkit-scrollbar-track{
         background-color: var(--second-bg-color);
         border-top: 0.1rem solid rgba(0,0,0,0.4);
         display: none;
+        cursor: pointer;
     }
     .navbar.active{
         display: block;
@@ -153,14 +154,14 @@ span{
 }
 .home-img img{
     position: relative;
-    width: 32vw;
+    width: 28vw;
     border-radius: 50%;
-    box-shadow: 0 0 25px var(--third-bg-color);
+    box-shadow: 0 0 20px var(--third-bg-color);
     cursor: pointer;
 }
 .home-img img:hover{
     transform: scale(1.01);
-    filter: drop-shadow(0 0 25px var(--third-bg-color));
+    filter: drop-shadow(0 0 18px var(--third-bg-color));
 }
 /* home-content set-up */
 .home-content p{
@@ -299,6 +300,11 @@ span{
 .services{
     background: var(--second-bg-color);
 }
+.heading{
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;}
 .services-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -353,140 +359,5 @@ span{
     .services-container{
         grid-template-columns: repeat(1,1fr);
     }
-}
-
-/* Education step Section set-up */
-.education{
-    background: var(--second-bg-color);
-}
-.education .timeline{
-    position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-.education .timeline::after{
-    content: '';
-    position: absolute;
-    width: 6px;
-    background: var(--main-color);
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    margin-left: -3px;
-    z-index: -2px;
-}
-.education .content{
-    padding: 10px 40px;
-    position: relative;
-    background-color: inherit;
-    width: 50% ;
-}
-.education .content::after{
-    content: '';
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    line-height: 25px;
-    right: -17px;
-    background-color: white;
-    border: 4px solid var(--third-bg-color);
-    top: 15px;
-    border-radius: 50%;
-    z-index: 100;
-    font-size: 1.8rem;
-    text-align: center;
-    font-weight: 600;
-    color: var(--main-color);
-}
-.education .container-left{
-    left: 0;
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-.education .container-right{ 
-    left: 50%;
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-.education .container-left::before {
-    content: "";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    right: 30px;
-    border: medium solid var(--third-bg-color);
-    border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent var(--third-bg-color);
-}
-.education .container-right::before{
-    content: "";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    right: 30px;
-    border: medium solid var(--third-bg-color);
-    border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent var(--third-bg-color);
-}
-.education .container-right::after{
-    left: -16px;
-}
-.education .content{
-    background: var(--third-bg-color);
-    position: relative;
-    border-radius: 6px;
-}
-.education .content .tag{
-    font-size: 1.5rem;
-    padding-top: 1.5rem;
-    padding-left: 1.5rem;
-}
-.education .content .decs{
-    margin-left: 1.5rem;
-    padding-bottom: 1rem;
-}
-.education .content .decs h3{
-    font-size: 1.5rem;
-    font-weight: 600;
-}
-.education .content .decs p{
-    font-size: 1.3rem;
-    font-weight: 500;
-}
-
-@media screen and(max-width:600px) {
-    .education .timeline{
-        margin-top: 2rem;
-    }
-    .education .timeline::after{
-        left: 31px;
-    }
-    .education .content{
-        width: 100%;
-        padding-left: 8rem;
-        padding-right: 2rem;
-    }
-    .education .content::after{
-        font-size: 2.2rem;
-    }
-    .education .content::before{
-        left: 61px;
-        border: medium solid var(--third-bg-color);
-        border-width: 10px 10px 10px 0;
-        border-color: transparent var(--third-bg-color) transparent transparent;
-    }
-    .education .container-left::after{
-        left: 15px;
-    }
-    .education .container-right::after{
-        left: 15px;
-    }
-    .education .container-right{
-        left: 0%;
-    } 
 }
 
