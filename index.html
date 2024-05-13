@@ -7,17 +7,15 @@
     <!-- CSS link -->
     <link rel="stylesheet" href="css/style.css">
     <!-- Font Styling -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
-    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+<body >
     <!-- Navbar start -->
     <header class="header">
         <a href="" class="logo">PortoZ</a>
-        <i class="fa-solid fa-bars" id="menu-icon"></i>
-    <nav class="navbar">
-        <a href="#">Home</a>
+        <i class="fa-solid fa-bars" id="menu-icon" onclick="toogle()"></i>        
+    <nav class="navbar" id="nvbar">
+        <a href="#" class="active">Home</a>
         <a href="#">About</a>
         <a href="#">Project</a>
     </nav>
@@ -25,7 +23,7 @@
     <!-- Navbar end -->
 
     <!-- Main Section start -->
-    <section class="home" id="home">
+    <section class="home" id="home" onclick="remove()">
         <div class="home-img">
             <img src="assets/me.jpeg" alt="" >
         </div>
@@ -48,7 +46,7 @@
     <!-- Main Section end -->
 
     <!-- Service Section Start -->
-    <section class="services" id="services">
+    <section class="services" id="services" onclick="remove()">
         <h2 class="heading">Services</h2>
 
         <div class="services-container">
@@ -77,80 +75,7 @@
     </section>
     <!-- Service Section End -->
 
-    <!-- Education step section start -->
-        <section class="education" id="education">
-            <h2 class="heading">My <span>Education</span></h2>
-            <div class="timeline">
-                <div class="container-right">
-                    <div class="content">
-                        <div class="tag">
-                            <h2>First Step</h2>
-                        </div>
-                        <div class="decs">
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, tempora nesciunt quam, non iste itaque fugiat ipsam, numquam excepturi eveniet repudiandae quibusdam \
-                                distinctio ratione! Veritatis saepe est doloribus laboriosam ipsam?</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="container-left">
-                    <div class="content">
-                        <div class="tag">
-                            <h2>Second Step</h2>
-                        </div>
-                        <div class="decs">
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, tempora nesciunt quam, non iste itaque fugiat ipsam, numquam excepturi eveniet repudiandae quibusdam \
-                                distinctio ratione! Veritatis saepe est doloribus laboriosam ipsam?</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="container-right">
-                    <div class="content">
-                        <div class="tag">
-                            <h2>Third Step</h2>
-                        </div>
-                        <div class="decs">
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, tempora nesciunt quam, non iste itaque fugiat ipsam, numquam excepturi eveniet repudiandae quibusdam \
-                                distinctio ratione! Veritatis saepe est doloribus laboriosam ipsam?</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="container-left">
-                    <div class="content">
-                        <div class="tag">
-                            <h2>Fourth Step</h2>
-                        </div>
-                        <div class="decs">
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, tempora nesciunt quam, non iste itaque fugiat ipsam, numquam excepturi eveniet repudiandae quibusdam \
-                                distinctio ratione! Veritatis saepe est doloribus laboriosam ipsam?</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="container-right">
-                    <div class="content">
-                        <div class="tag">
-                            <h2>Fifth Step</h2>
-                        </div>
-                        <div class="decs">
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, tempora nesciunt quam, non iste itaque fugiat ipsam, numquam excepturi eveniet repudiandae quibusdam \
-                                distinctio ratione! Veritatis saepe est doloribus laboriosam ipsam?</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="container-left">
-                    <div class="content">
-                        <div class="tag">
-                            <h2>Sixth Step</h2>
-                        </div>
-                        <div class="decs">
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, tempora nesciunt quam, non iste itaque fugiat ipsam, numquam excepturi eveniet repudiandae quibusdam \
-                                distinctio ratione! Veritatis saepe est doloribus laboriosam ipsam?</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    <!-- Education step section end -->
-
+    
     <!-- Wow Animation -->
     <script src="js/main.js"></script>
 </body>
