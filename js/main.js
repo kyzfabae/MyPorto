@@ -9,5 +9,11 @@ function toogle(){
 }
 
 function remove(){
-    nvbar.style.display = "none";
+    if( nvbar.style.display = "block"){
+        nvbar.style.display = "none";
+    }
+    else{
+        nvbar.style.display = "block";
+    }
+
 }
